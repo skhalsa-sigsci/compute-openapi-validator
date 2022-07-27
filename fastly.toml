@@ -1,0 +1,20 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["skhalsa"]
+description = "openapi request validation"
+language = "javascript"
+manifest_version = 2
+name = "compute-openapi-validator"
+service_id = ""
+
+[local_server]
+  [local_server.backends]
+    [local_server.backends.petstore]
+      url = "https://petstore3.swagger.io"
+
+[setup]
+  [setup.backends]
+    [setup.backends.petstore]
+      address = "petstore3.swagger.io"
+      port = 443
