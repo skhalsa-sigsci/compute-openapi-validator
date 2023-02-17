@@ -1,4 +1,5 @@
 # compute-openapi-validator
+Compute@Edge service that performs API request and response validation based on OpenAPI/Swagger schema
 
 ## Usage
  1. `npm install`
